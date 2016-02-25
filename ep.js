@@ -16,6 +16,7 @@ function EPEvent(event_name, group_name, event_descripton, event_date) {
 	this.event_descripton = event_descripton;
 	this.date = event_date;
 	this.Task = [];
+	return this;
 }
 
 function Task(task_name, task_description, number_of_people, deadline, Event) {

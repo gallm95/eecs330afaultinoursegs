@@ -18,19 +18,16 @@ var datetime = currentdate.getDate() + "/"
 document.getElementById('date').value = datetime;
 
 
-function check(){
+
+function check1(){
+	console.log('i work i swear');
 	var n =	document.getElementById('name').value;
 	var g = document.getElementById('group').value; 
 	var d = document.getElementById('desc').value;
 	var t = document.getElementById('date').value;
 	var help = new EPEvent(n,g,d,t);
 	events.push(help);
-	console.log(events);
-
+	console.log(events[0]["event_name"]);
 };
-
-function check1(){
-	console.log('i work i swear');
-}
 
 
