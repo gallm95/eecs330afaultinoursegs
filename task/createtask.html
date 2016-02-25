@@ -1,1 +1,125 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create a Task</title>
+ 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  </head>
+  <body>
+  	<div class="page-header">
+  		<nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container" style="height: 35px" style="box-shadow: 4px 4px 4px">
+            <a class="navbar-brand" href="#">Event Planner</a>
+            <a class="navbar-brand navbar-right" href="#">
+           <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+            </a>
+         <button style="margin-right: 5px; margin-left: 10px;" type="button" class="btn btn-default navbar-right">
+			Sign in
+		 </button>
+          
+        </nav>
+<div class="panel panel-default panel-info">
+  <div class="panel-body panel-info">Create a Task</div>
+</div>
+
+	
+  <div class="container" style="padding-top: 20px">
+
+    <form>
+	    <div class="col-md-6">
+	    <div class="form-group">
+	    	<label for="confirmevent">Confirm Event</label>
+	    	<select class="form-control" id="Events">
+	    		<option value="Bake Sale">Bake Sale</option>
+	    		<option value="Fundrager">Fundrager</option>
+	    		<option value="Beach Soccer Tournament">Beach Soccer Tournament</option>
+	    	</select>
+	    </div>
+
+
+	    	<div class="form-group" >
+		    <label for="exampletaskname">Task Name</label>
+		    <input type="text" class="form-control" id="exampletaskname" placeholder="e.g. Bake Cookies">
+		  </div>
+		  
+		  <div class="form-group">
+		    <label for="description">Task Description:</label>
+		   <textarea class="form-control" rows="5" id="description" placeholder="e.g. bake 50 chocolate chip cookies for the tech bake sale"></textarea>
+		  </div>
+		  
+			<div class="form-group">
+				<label for="deadlineday">Deadline:</label>
+                <div class='input-group date' >
+                    <input type='text' class="form-control" id='deadline'/>
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+       
+	<!--<script type="text/javascript">
+	    $(function () {
+	        $('#datetimepicker6').datetimepicker();
+	        $('#datetimepicker7').datetimepicker({
+	            useCurrent: false //Important! See issue #1075
+	        });
+	        $("#datetimepicker6").on("dp.change", function (e) {
+	            $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+	        });
+	        $("#datetimepicker7").on("dp.change", function (e) {
+	            $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+	        });
+	    });
+	</script>
+	-->
+
+		  <div class="form-group">
+		  <label for="Volunteers">How Many Volunteers Do You Need?</label> 
+		  <select class="form-control" id="volunteers">
+		    <option value="1">1</option>
+		    <option value="2">2</option>
+		    <option value="3">3</option>
+		    <option value="4">4</option>
+		    <option value="5">5</option>
+		    <option value="6">6</option>
+		    <option value="7">7</option>
+		    <option value="8">8</option>
+		    <option value="9">9</option>
+		    <option value="10">10</option>
+		    <option value="no_limit">No Limit</option>
+		  </select>
+
+		  <script>
+		  	function submitme() {
+		  		document.task_maker.submit();
+		  	}
+		  </script>
+
+		<!--<input type="button" onclick="submitme()" value="submit"/> -->
+
+
+		  </div>
+			  <button id="submit_button" type="submit" class="btn btn-info active" >
+			  Submit
+			  </button>
+		 </div>
+
+
+	     </div>
+	      </div>
+	</form>
+</div>
+
+</body>
+<script type="text/javascript" src="ep.js"></script>
+<script type="text/javascript" src="createtask.js"></script>
+
+</html>
+
+
+
 
