@@ -19,7 +19,6 @@ submit.onclick = function(e)  {
 	var fields = document.getElementById("exampletaskname").value;
 	var task = new Task(fields, document.getElementById("description").value, document.getElementById("volunteers").value, document.getElementById("deadline").value, document.getElementById("Events").value); 
 	console.log(task);
-	window.alert("Success " + JSON.stringify(task.task_name)+ " created!!!");
 };
 
 
